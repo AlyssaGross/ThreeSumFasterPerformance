@@ -132,7 +132,7 @@ public class ThreeSumFasterPerformance {
         resultsWriter.println("#InputSize    AverageTime");                                              // # marks a comment in gnuplot data 
         resultsWriter.flush();
 
-        for(int inputSize=MININPUTSIZE;inputSize<=MAXINPUTSIZE; inputSize*= 2) {                        // for each size of input we want to test: in this case starting small and doubling the size each time
+        for(int inputSize=MININPUTSIZE;inputSize<=MAXINPUTSIZE; inputSize*= 2) {                        // for each size of input we want to test: starting at MININPUTSIZE and doubling each iteration until reaching MAXINPUTSIZE
 
             System.out.println("Running test for input size "+inputSize+" ... ");                       // progress message... 
             System.out.print("    Running trial batch...");
